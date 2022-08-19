@@ -1,15 +1,11 @@
-from documento import CpfCnpj
+from documento import Documento
 
-cpf = "67140301000"
-#cpf = "03223875077"
+cpf = "61724758004"
 
-print(len(cpf))
-
-CpfCnpj(cpf, "cpf")
-print(CpfCnpj(cpf, "cpf"))
+doc = Documento.cria_documento(cpf)
+print(doc)
 
 cnpj = "69518091000158"
-cnpj = "03658060000194"
 
-CpfCnpj(cnpj, "cnpj")
-print(CpfCnpj(cnpj, "cnpj"))
+docpj = Documento.cria_documento(cnpj)
+print(docpj)
